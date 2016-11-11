@@ -18,9 +18,8 @@ Route::get('/', function () {
 /*
 | The route to the new student form.
 */
-Route::get('/student', function () {
-  return view('newstudent');
-});
+Route::get('/student', 'StudentController@create');
+
 
 /*
 | The route to the new school form.

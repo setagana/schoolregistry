@@ -26,19 +26,19 @@
   <div class="form-group">
     <label for="inputFirstname" class="control-label col-xs-2">First name</label>
     <div class="col-xs-10 col-sm-8">
-      <input type="text" class="form-control" id="inputFirstname" placeholder="First name">
+      <input type="text" class="form-control" name="inputFirstname" id="inputFirstname" placeholder="First name">
     </div>
   </div>
   <div class="form-group">
     <label for="inputSurname" class="control-label col-xs-2">Surname</label>
     <div class="col-xs-10 col-sm-8">
-      <input type="text" class="form-control" id="inputSurname" placeholder="Surname">
+      <input type="text" class="form-control" name="inputSurname" id="inputSurname" placeholder="Surname">
     </div>
   </div>
   <div class="form-group">
     <label for="inputEmail" class="control-label col-xs-2">Email</label>
     <div class="col-xs-10 col-sm-8">
-      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+      <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email">
     </div>
   </div>
   <div class="form-group">
@@ -52,24 +52,14 @@
     <div class="row">
       <div class="col-xs-2"></div>
       <div class="col-xs-10 col-sm-8">
+      @foreach ($schools as $school)
         <div class="input-group schoolcheckbox">
-          <span class="input-group-addon">
-            <input type="checkbox" id="checkboxschoolid1" name="schoolname1" aria-label="Select schoolname1" value="schoolid1">
-          </span>
-          <input type="text" class="form-control" value="schoolname1" disabled>
+            <span class="input-group-addon">
+              <input type="checkbox" id="{{ $school->id }}" name="{{ $school->schoolname }}" aria-label="Select {{ $school->schoolname }}" value="{{ $school->id }}">
+            </span>
+            <input type="text" class="form-control" value="{{ $school->schoolname }}" disabled>
         </div>
-        <div class="input-group schoolcheckbox">
-          <span class="input-group-addon">
-            <input type="checkbox" id="checkboxschoolid2" name="schoolname2" aria-label="Select schoolname2" value="schoolid2">
-          </span>
-          <input type="text" class="form-control" value="schoolname2" disabled>
-        </div>
-        <div class="input-group schoolcheckbox">
-          <span class="input-group-addon">
-            <input type="checkbox" id="checkboxschoolid2" name="schoolname3" aria-label="Select schoolname3" value="schoolid3">
-          </span>
-          <input type="text" class="form-control" value="schoolname3" disabled>
-        </div>
+      @endforeach
       </div>
     </div>
     <!-- <label for="selectSchools" class="control-label col-xs-2">Email</label>

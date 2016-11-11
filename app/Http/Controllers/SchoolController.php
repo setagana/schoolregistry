@@ -12,7 +12,7 @@ class SchoolController extends Controller
      * Show the new school form.
      */
     public function create()
-    {
+    {      
       return view('newschool');
     }
   
