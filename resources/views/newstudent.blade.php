@@ -52,11 +52,23 @@
     <div class="row">
       <div class="col-xs-2"></div>
       <div class="col-xs-10 col-sm-8">
-        <div class="checkbox">
-            <label><input type="checkbox" value="">Schoolname 1</label>
+        <div class="input-group schoolcheckbox">
+          <span class="input-group-addon">
+            <input type="checkbox" id="checkboxschoolid1" name="schoolname1" aria-label="Select schoolname1" value="schoolid1">
+          </span>
+          <input type="text" class="form-control" value="schoolname1" disabled>
         </div>
-        <div class="checkbox">
-            <label><input type="checkbox" value="">Schoolname 2</label>
+        <div class="input-group schoolcheckbox">
+          <span class="input-group-addon">
+            <input type="checkbox" id="checkboxschoolid2" name="schoolname2" aria-label="Select schoolname2" value="schoolid2">
+          </span>
+          <input type="text" class="form-control" value="schoolname2" disabled>
+        </div>
+        <div class="input-group schoolcheckbox">
+          <span class="input-group-addon">
+            <input type="checkbox" id="checkboxschoolid2" name="schoolname3" aria-label="Select schoolname3" value="schoolid3">
+          </span>
+          <input type="text" class="form-control" value="schoolname3" disabled>
         </div>
       </div>
     </div>

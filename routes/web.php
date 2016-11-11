@@ -25,9 +25,7 @@ Route::get('/student', function () {
 /*
 | The route to the new school form.
 */
-Route::get('/school', function () {
-  return view('newschool');
-});
+Route::get('/school', 'SchoolController@create');
 
 /*
 | The route for posting a new student data to the database.
@@ -39,6 +37,4 @@ Route::post('/student', function (Request $request) {
 /*
 | The route for posting a new school data to the database.
 */
-Route::post('/school', function (Request $request) {
-  //
-});
+Route::post('/school', 'SchoolController@store');

@@ -21,12 +21,12 @@
   <div class="col-sm-2"></div>
 </div>
 
-<form class="form-horizontal" action="{{ url('school') }}" method = "POST">
+<form class="form-horizontal" action="{{ url('school') }}" method="POST">
   {{ csrf_field() }}
   <div class="form-group">
     <label for="inputName" class="control-label col-xs-2">School name</label>
     <div class="col-xs-10 col-sm-8">
-      <input type="text" class="form-control" id="inputName" placeholder="School name">
+      <input type="text" class="form-control" name="inputName" id="inputName" placeholder="School name">
     </div>
   </div>
   <div class="form-group">
