@@ -107,3 +107,14 @@ body {
 .schoolcheckbox {
  margin-bottom: 15px;
 }
+
+/*
+* Schoolname constraint on mobile navbar
+*/
+
+.nowrap {
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
