@@ -15,6 +15,7 @@ class RegistryController extends Controller
     {      
       $schools = School::all();
       
+      /*If no ID is provided for sidebar nav selection, select the first school in the DB*/
       if(!isset($id)) {
         $id = School::first()->id;
       }

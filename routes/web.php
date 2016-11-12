@@ -15,6 +15,9 @@ Route::get('/', function() {
   return redirect()->route('registry');
 });
 
+/*
+* The route to the registry page, which takes an optional school ID parameter for sidebar navigation
+*/
 Route::get('/registry/{id?}', 'RegistryController@show')->name('registry');
 
 /*

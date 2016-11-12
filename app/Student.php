@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Student extends Model
 {
     /*
-    * The relationship between students and schools.
+    * The many-to-many relationship between students and schools.
     */
     public function schools()
     {

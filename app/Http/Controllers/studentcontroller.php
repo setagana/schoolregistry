@@ -42,7 +42,7 @@ class StudentController extends Controller
       $schoolList = array();
       $input = $request->all();
       foreach ($input as $name => $value) {
-        if(strchr($name,"schoolcheckbox",true)) {
+        if(strchr($name,'schoolcheckbox',true)) {
           array_push($schoolList, $value);
         }
       }
