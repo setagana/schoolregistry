@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('students');
+Route::get('/', function() {
+  return redirect()->route('registry');
 });
+
+Route::get('/registry/{id?}', 'RegistryController@show')->name('registry');
 
 /*
 | The route to the new student form.
