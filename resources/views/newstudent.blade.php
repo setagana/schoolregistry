@@ -55,7 +55,7 @@
       @foreach ($schools as $school)
         <div class="input-group schoolcheckbox">
             <span class="input-group-addon">
-              <input type="checkbox" id="{{ $school->id }}" name="{{ $school->schoolname }}" aria-label="Select {{ $school->schoolname }}" value="{{ $school->id }}">
+              <input type="checkbox" id="{{ $school->id }}" name="{{ $school->id }}schoolcheckbox" aria-label="Select {{ $school->schoolname }}" value="{{ $school->id }}">
             </span>
             <input type="text" class="form-control" value="{{ $school->schoolname }}" disabled>
         </div>

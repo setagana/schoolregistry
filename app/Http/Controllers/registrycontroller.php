@@ -18,7 +18,7 @@ class RegistryController extends Controller
       if(!isset($id)) {
         $id = School::first()->id;
       }
-      
+      /*Set the selected school for sidebar navigation*/
       $selectedSchool = School::find($id);
     
       return view('students', ['selectedSchool' => $selectedSchool], compact('schools'));

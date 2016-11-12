@@ -29,13 +29,11 @@ Route::get('/student', 'StudentController@create');
 Route::get('/school', 'SchoolController@create');
 
 /*
-| The route for posting a new student data to the database.
+| The route for posting a new student to the database.
 */
-Route::post('/student', function (Request $request) {
-  //
-});
+Route::post('/student', 'StudentController@store');
 
 /*
-| The route for posting a new school data to the database.
+| The route for posting a new school to the database.
 */
 Route::post('/school', 'SchoolController@store');
